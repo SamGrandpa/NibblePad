@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantsFragment"
+    android:background="@drawable/food_background"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/restaurant_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:paddingLeft="16sp"
+        android:paddingTop="16sp"
+        android:paddingRight="16sp"
+        android:paddingBottom="16sp"
+        android:text="Restaurants"
+        android:textColor="#ffffff"
+        android:fontFamily="cursive"
+        android:textSize="85dp"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="#FFFFFF"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="2px"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:id="@+id/restaurants_list"
+        android:textAlignment="center" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_restaurant"
+        android:src="@drawable/ic_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:contentDescription="@string/add_restaurant"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/teal_200"/>
+</LinearLayout>

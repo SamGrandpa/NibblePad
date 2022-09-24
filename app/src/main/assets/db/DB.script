@@ -1,0 +1,31 @@
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+CREATE MEMORY TABLE PUBLIC.RESTAURANTS(RESTAURANTID INTEGER IDENTITY NOT NULL PRIMARY KEY, NAME VARCHAR(20), CUISINETYPE VARCHAR(20), ADDRESS VARCHAR(20), PHONENUMBER VARCHAR(20), NOTES LONGVARCHAR DEFAULT '')
+CREATE MEMORY TABLE PUBLIC.FOODS(FOODID INTEGER IDENTITY NOT NULL PRIMARY KEY, NAME VARCHAR(20), NOTES LONGVARCHAR DEFAULT '')
+CREATE USER "SA" PASSWORD DIGEST "d41d8cd98f00b204e9800998ecf8427e"
+ALTER USER SA SET LOCAL TRUE
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
+GRANT DBA TO SA
+SET WRITE_DELAY 20
+SET FILES SCALE 32
+SET SCHEMA PUBLIC
+INSERT INTO FOODS VALUES(1, 'Bluefish')
+INSERT INTO FOODS VALUES(2, 'Kiwi', 'Good stuff')
+INSERT INTO FOODS VALUES(3, 'Eggrolls')
+INSERT INTO FOODS VALUES(4, 'Apple juice')
+INSERT INTO FOODS VALUES(5, 'Chicken', 'Good stuff')
+INSERT INTO FOODS VALUES(6, 'Lasagna')
+INSERT INTO FOODS VALUES(7, 'Arugala', 'Good stuff')
+INSERT INTO FOODS VALUES(8, 'Ghorme Sabzi')
+INSERT INTO FOODS VALUES(9, 'Pepperoni')
+INSERT INTO FOODS VALUES(10, 'Bagels', 'Good stuff')
+INSERT INTO RESTAURANTS VALUES(1, 'Le Continental', 'cuisine 1', 'address 1', 'phone number 1')
+INSERT INTO RESTAURANTS VALUES(2, 'One Great City Brewing Company', 'cuisine 2', 'address 2', 'phone number 2')
+INSERT INTO RESTAURANTS VALUES(3, 'Bistro Dansk Restaurant Ltd', 'cuisine 3', 'address 3', 'phone number 3')
+INSERT INTO RESTAURANTS VALUES(4, 'Close Company', 'cuisine 4', 'address 4', 'phone number 4', 'num num')
+INSERT INTO RESTAURANTS VALUES(5, 'Sargent Taco Shop', 'cuisine 5', 'address 5', 'phone number 5')
+INSERT INTO RESTAURANTS VALUES(6, 'Harth Mozza & Wine Bar', 'cuisine 6', 'address 6', 'phone number 6', 'num num')
+INSERT INTO RESTAURANTS VALUES(7, 'Spice Circle East Indian Restaurant', 'cuisine 7', 'address 7', 'phone number 7')
+INSERT INTO RESTAURANTS VALUES(8, 'Enoteca', 'cuisine 8', 'address 8', 'phone number 8', 'num num')
+INSERT INTO RESTAURANTS VALUES(9, 'BMC Market', 'cuisine 9', 'address 9', 'phone number 9')
+INSERT INTO RESTAURANTS VALUES(10, 'Portage Meat & Sausage Deli', 'cuisine 10', 'address 10', 'phone number 10', 'num num')

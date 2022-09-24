@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/note_restaurant_edit"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#ADD8E6"
+        android:hint="Add notes here"
+        android:paddingLeft="5dp"
+        android:textSize="30sp"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:lines="11"
+        android:maxLength="350"/>
+</RelativeLayout>

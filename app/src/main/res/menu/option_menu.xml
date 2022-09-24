@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mytest = "http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Share"
+        android:id="@+id/option_share"
+        mytest:showAsAction="always"
+        android:icon="@drawable/ic_share"
+        />
+</menu>
